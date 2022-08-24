@@ -1,0 +1,44 @@
+#include <iostream>
+#include <cmath>
+
+
+using namespace std;
+
+int main() {
+	double x;
+	double y;
+	cout << "Enter the numbers:" << endl;
+	cin >> x;
+	char ch;
+	while (cin >> ch >> y) {
+		double total;
+		switch (ch) {
+		case('+') :
+			total = x + y;
+			cout << x + y;
+			x = total;
+			break;
+
+		case('-'):
+			total = x - y;
+			cout << x - y;
+			x = total;
+			break;
+		case('*'):
+			total = x * y;
+			cout << x * y;
+			x = total;
+			break;
+		case('/'):
+			total = x / y;
+			cout << x / y;
+			x = total;
+			break;
+		case('^'):
+			total = pow(x, y);
+			cout << pow(x, y);
+			x = total;
+		}
+
+	}
+}
